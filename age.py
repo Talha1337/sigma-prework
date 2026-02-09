@@ -13,5 +13,5 @@ def age(date):
     return int((current_date - dt_date).days/365)
 
 
-date = input("Please enter the age date (DD-MM-YYYY): ")
+date = input("Please enter the date for calculating age (DD-MM-YYYY): ")
 print(f"The calculated age for {date} is {age(date=date)}")
