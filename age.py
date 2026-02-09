@@ -30,18 +30,15 @@ def check_date(date: str) -> bool:
     short_months = [2, 4, 7, 9, 11]
     february = 2
     if len(date_components) != 3:
-        print("3 components not found in date")
+        print(f"invalid number of components found in date")
+        print(f"should be 3, found {len(date_components)}")
         return False
     day, month, year = date_components
-    print(day)
     # ensuring all can be expressed as integers
     try:
         day = int(day)
-        print(f"day {day}")
         month = int(month)
-        print(f"month {month}")
         year = int(year)
-        print(f"year {year}")
     except:
         print("Integer conversion failed")
         return False
