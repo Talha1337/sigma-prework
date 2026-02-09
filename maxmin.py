@@ -17,7 +17,8 @@ def highest_and_lowest(int_list: list) -> list:
 examples = [
     [2, 4, 1, 0, 2, -1],
     [20, 50, 12, 6, 14, 8],
-    [100, -100]
+    [100, -100],
+    [0]
 ]
 
 for example in examples:
